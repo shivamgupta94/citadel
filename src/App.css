@@ -1,0 +1,47 @@
+.App {
+  max-width: 400px;
+  margin: auto;
+}
+
+.App__input {
+  margin-top: 100px;
+  z-index: 100;
+  width: 100%;
+}
+
+.App__listItem-highlight {
+  background-color: skyblue;
+}
+
+.App__list {
+  z-index: 100;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.App__listItem {
+  z-index: 100;
+  cursor: pointer;
+  list-style-type: none;
+  background: #eee;
+  padding: 10px;
+  border-bottom: 1px solid #dde;
+}
+
+.App__listItem:hover {
+  background: #dedede;
+}
+
+.App__listItem:active {
+  background: skyblue;
+}
+
+.App__clickGrabber {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+}
