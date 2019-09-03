@@ -1,0 +1,98 @@
+<testsuites name="jest tests" tests="8" failures="6" time="0.955">
+  <testsuite name="undefined" errors="0" failures="6" skipped="0" timestamp="2019-09-03T21:21:06" time="0.955" tests="8">
+    <testcase classname=" renders without crashing" name=" renders without crashing" time="0.023">
+    </testcase>
+    <testcase classname=" should render an input by default" name=" should render an input by default" time="0.017">
+      <failure>Error: expect(received).toBeNull()
+
+Expected value to be null, instead received
+  &lt;ul class=&quot;App__list&quot; /&gt;
+    at Object.&lt;anonymous&gt;.it (/mnt/d/bikky/typeahead-input-95d8tbdro6s/src/App.test.js:31:16)
+    at Object.asyncFn (/mnt/d/bikky/typeahead-input-95d8tbdro6s/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/mnt/d/bikky/typeahead-input-95d8tbdro6s/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/mnt/d/bikky/typeahead-input-95d8tbdro6s/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/mnt/d/bikky/typeahead-input-95d8tbdro6s/node_modules/p-map/index.js:46:16)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:188:7)</failure>
+    </testcase>
+    <testcase classname=" should render a list if you type a character that matches" name=" should render a list if you type a character that matches" time="0.011">
+    </testcase>
+    <testcase classname=" should not render the list with leading whitespace" name=" should not render the list with leading whitespace" time="0.006">
+      <failure>Error: expect(received).toBeNull()
+
+Expected value to be null, instead received
+  &lt;ul class=&quot;App__list&quot;&gt;&lt;li class=&quot;App__listItem&quot;&gt;&lt;span&gt;&lt;span&gt;New&lt;/span&gt;&lt;span class=&quot;App__listItem-highlight&quot;&gt;D&lt;/span&gt;&lt;span&gt;ehli&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+    at Object.&lt;anonymous&gt;.it (/mnt/d/bikky/typeahead-input-95d8tbdro6s/src/App.test.js:61:16)
+    at Object.asyncFn (/mnt/d/bikky/typeahead-input-95d8tbdro6s/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/mnt/d/bikky/typeahead-input-95d8tbdro6s/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/mnt/d/bikky/typeahead-input-95d8tbdro6s/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/mnt/d/bikky/typeahead-input-95d8tbdro6s/node_modules/p-map/index.js:46:16)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:188:7)</failure>
+    </testcase>
+    <testcase classname=" should hide the list if you click outside of it" name=" should hide the list if you click outside of it" time="0.002">
+      <failure>Error: expect(received).toBeNull()
+
+Expected value to be null, instead received
+  &lt;ul class=&quot;App__list&quot;&gt;&lt;li class=&quot;App__listItem&quot;&gt;&lt;span&gt;&lt;span&gt;New&lt;/span&gt;&lt;span class=&quot;App__listItem-highlight&quot;&gt;D&lt;/span&gt;&lt;span&gt;ehli&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+    at Object.&lt;anonymous&gt;.it (/mnt/d/bikky/typeahead-input-95d8tbdro6s/src/App.test.js:78:16)
+    at Object.asyncFn (/mnt/d/bikky/typeahead-input-95d8tbdro6s/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/mnt/d/bikky/typeahead-input-95d8tbdro6s/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/mnt/d/bikky/typeahead-input-95d8tbdro6s/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/mnt/d/bikky/typeahead-input-95d8tbdro6s/node_modules/p-map/index.js:46:16)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:188:7)</failure>
+    </testcase>
+    <testcase classname=" should highlight the section of the match" name=" should highlight the section of the match" time="0.007">
+      <failure>Error: expect(received).toEqual(expected)
+
+Expected value to equal:
+  &quot;D&quot;
+Received:
+  &quot;d&quot;
+    at Object.&lt;anonymous&gt;.it (/mnt/d/bikky/typeahead-input-95d8tbdro6s/src/App.test.js:93:31)
+    at Object.asyncFn (/mnt/d/bikky/typeahead-input-95d8tbdro6s/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/mnt/d/bikky/typeahead-input-95d8tbdro6s/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/mnt/d/bikky/typeahead-input-95d8tbdro6s/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/mnt/d/bikky/typeahead-input-95d8tbdro6s/node_modules/p-map/index.js:46:16)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:188:7)</failure>
+    </testcase>
+    <testcase classname=" should populate the input with the city if clicked" name=" should populate the input with the city if clicked" time="0.005">
+      <failure>Error: expect(received).toEqual(expected)
+
+Expected value to equal:
+  &quot;Detroit&quot;
+Received:
+  &quot;Cleveland&quot;
+    at Object.&lt;anonymous&gt;.it (/mnt/d/bikky/typeahead-input-95d8tbdro6s/src/App.test.js:110:23)
+    at Object.asyncFn (/mnt/d/bikky/typeahead-input-95d8tbdro6s/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/mnt/d/bikky/typeahead-input-95d8tbdro6s/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/mnt/d/bikky/typeahead-input-95d8tbdro6s/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/mnt/d/bikky/typeahead-input-95d8tbdro6s/node_modules/p-map/index.js:46:16)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:188:7)</failure>
+    </testcase>
+    <testcase classname=" should sort the city matches alphabetically" name=" should sort the city matches alphabetically" time="0.005">
+      <failure>Error: expect(received).toEqual(expected)
+
+Expected value to equal:
+  &quot;Shanghai&quot;
+Received:
+  &quot;Moscow&quot;
+    at Object.&lt;anonymous&gt;.it (/mnt/d/bikky/typeahead-input-95d8tbdro6s/src/App.test.js:125:36)
+    at Object.asyncFn (/mnt/d/bikky/typeahead-input-95d8tbdro6s/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/mnt/d/bikky/typeahead-input-95d8tbdro6s/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/mnt/d/bikky/typeahead-input-95d8tbdro6s/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/mnt/d/bikky/typeahead-input-95d8tbdro6s/node_modules/p-map/index.js:46:16)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:188:7)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
